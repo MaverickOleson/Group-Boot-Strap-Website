@@ -1,0 +1,34 @@
+#space{
+    height: 8vh;
+}
+#mainView{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 17vh 75vh ;
+}
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 8vh;
+}
+li p:hover{
+    color: rgb(105, 105, 105);
+}
+li p:visited{
+    color: red;
+}
+li p:visited:hover{
+    color: rgb(255, 105, 105);
+}
+.title{
+    max-height: 100%;
+    grid-row: 1/2;
+}
+.mainViewContent{
+    max-height: 100%;
+    grid-row: 2/3;
+}
+.mainImage{
+    max-height: calc(100% - 2px);
+}
