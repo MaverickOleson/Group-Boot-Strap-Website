@@ -9,17 +9,18 @@
 nav{
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     height: 8vh;
+    width:100vw;
 }
-li p:hover{
-    color: rgb(105, 105, 105);
+a:link {
+  color: green !important;
 }
-li p:visited{
-    color: red;
+a:hover{
+    color: rgb(110, 110, 110) !important;
 }
-li p:visited:hover{
-    color: rgb(255, 105, 105);
+a:visited{
+    color:red !important;
 }
 .title{
     max-height: 100%;
@@ -30,5 +31,6 @@ li p:visited:hover{
     grid-row: 2/3;
 }
 .mainImage{
-    max-height: calc(100% - 2px);
+    box-sizing: border-box;
+    max-height: 100%;
 }
