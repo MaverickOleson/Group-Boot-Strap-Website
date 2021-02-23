@@ -47,7 +47,7 @@
         <img src="images/ModernVenomLogo.png" class="title mt-2 ml-auto mr-auto">
         <div class="mainViewContent container-fluid d-flex flex-row justify-content-between mt-4">
             <div class="col">
-                <h3>Venom</h3>
+                <h3>Kindergarten. Speaks for itself, doesn't it. A world of<br>blissful ignorance, wherein I could live my dreams<br>of becoming a superhero, or a supervillain for that matter<br>with merchandise. And such was the case with this action figure.<br></h3>
             </div>
             <div class="col d-flex justify-content-center" style="z-index: -1;">
                 <img src="images/Venom.png" class="mainImage border border-light">
@@ -71,6 +71,17 @@
     </p> <p>
         alksdjfklajdf
     </p>
-    <iframe width="1145" height="644" src="https://www.youtube.com/embed/QqX5g0i3T0c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--check formatting in notes-->
+    <div id="videoBox">
+        <iframe width="1145" height="644" src="https://www.youtube.com/embed/HsZceXd1RHY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+        <button id="close"></button>
+    </div>
+    <audio autoplay loop id="audio">
+        <source src="audio/Spider-Man - VENOM Theme _ EPIC REMIX (Venom 2018 x Spider-Man 3).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        document.getElementById('audio').pause;
+    </script>
 </body>
 </html>

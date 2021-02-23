@@ -13,9 +13,6 @@ nav{
     height: 8vh;
     width:100vw;
 }
-a:link {
-  color: green !important;
-}
 a:hover{
     color: rgb(110, 110, 110) !important;
 }
@@ -33,4 +30,27 @@ a:visited{
 .mainImage{
     box-sizing: border-box;
     max-height: 100%;
+}
+#videoBox{
+    display: block;
+    width: 64vw;
+    height: 36vw;
+    position: fixed;
+    top: calc((100vh - 36vw) / 2);
+    right: 16vw;
+    z-index: 1;
+}
+#video{
+    width: inherit;
+    height: inherit;
+}
+#close{
+    width: 1vw;
+    height: 1vw;
+    background-color: white;;
+    content: '\9746';
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
