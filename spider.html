@@ -24,7 +24,6 @@ background-attachment: fixed;
 background-size: cover;
 font-family: Spidext;
         }
-        
        
     </style>
 </head>
@@ -54,17 +53,15 @@ font-family: Spidext;
         </div>
     </nav>
     <div id="space"></div>
+    <div class="d-flex justify-content-center" style="width: 100vw; position: absolute; top: 10vh" id="title">
+        <h1>Spider-Man</h1>
+    </div>
     <div id="mainView">
-        <img src="images/spiderlogo.png" class="title mt-2 ml-auto mr-auto">
+        <img src="images/pagecorner.png" onclick="retro()" id="retroButton" style="border: none; background-color: transparent;">
+        <img src="images/spiderlogo.png" class="title mt-2 ml-auto mr-auto" style="z-index: -1;">
         <div class="mainViewContent container-fluid d-flex flex-row justify-content-between mt-4">
-            <div class="col">
-                <h3>Spider-Man</h3>
-            </div>
-            <div class="col d-flex justify-content-center" style="z-index: -1;">
+            <div class="col d-flex justify-content-center" style="background-color: transparent;">
                 <img src="images/posespider.jpg" class="mainImage border border-light">
-            </div>
-            <div class="col">
-                <h3>Spider-Man</h3>
             </div>
         </div>
     </div>
@@ -87,5 +84,9 @@ font-family: Spidext;
            <br>
     </p>
 </div>
+<div class="container-fluid bg-light" style="height: 100px; color: black;">
+    <p>Property of: Chaz Coffman, Maverick Oleson, Ayush Singh</p>
+</div>
+<script src="js/spidermanRetro.js"></script>
 </body>
 </html>

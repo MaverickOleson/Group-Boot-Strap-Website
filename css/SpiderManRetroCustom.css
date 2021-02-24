@@ -1,0 +1,8 @@
+@font-face{
+    src: url('../fonts/VTC_letterer_pro.ttf');
+    font-family: ComicBook;
+}
+body{
+    background-image: url('../images/spidermanretrobg.png');
+    font-family: ComicBook;
+}

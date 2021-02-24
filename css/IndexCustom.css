@@ -1,16 +1,17 @@
 @font-face {
-    font-family: Venom;
-    src: url('../fonts/GalagarFont.ttf');
+    font-family: Marvel;
+    src: url('../fonts/MarvelRegular-Dj83.ttf');
 }
 *{
     z-index: 0;
 }
 body{
     margin: 0;
-    background-image: url('../images/VenomBG.jpg');
+    background-image: url('../images/indexBG.jpg');
+    background-color: black;
     color: white;
     text-align: center;
-    font-family: Venom;
+    font-family: Marvel;
 }
 #space{
     height: 8vh;
@@ -20,6 +21,9 @@ body{
     height: 100vh;
     grid-template-rows: 17vh 75vh ;
 }
+.bg-danger{
+    background-color: red !important;
+}
 nav{
     position: fixed;
     top: 0;
@@ -27,6 +31,9 @@ nav{
     height: 8vh;
     width: 100vw;
     z-index: 1;
+}
+a{
+    color: white im !important;
 }
 a:hover{
     color: rgb(110, 110, 110) !important;
@@ -55,15 +62,6 @@ a:visited{
 #mainImage{
     box-sizing: border-box;
     max-height: calc(100% - 8px);
-    border: white solid 5px;
-    box-sizing: border-box;
-}
-table{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-iframe{
     border: white solid 5px;
     box-sizing: border-box;
 }

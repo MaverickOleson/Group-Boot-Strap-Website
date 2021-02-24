@@ -1,0 +1,20 @@
+@font-face{
+    src: url('../fonts/VTC_letterer_pro.ttf');
+    font-family: ComicBook;
+}
+body{
+    background-image: url('../images/ironmanretrobg.png');
+    color: black;
+    font-family: ComicBook;
+}
+a{
+    color: black !important;
+}
+a, .col, img, iframe{
+    background-color: white;
+    border: 7px solid black;
+    box-sizing: border-box;
+}
+a{
+    border: 4px solid black;
+}
