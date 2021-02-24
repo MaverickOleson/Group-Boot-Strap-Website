@@ -1,6 +1,13 @@
 *{
     z-index: 0;
 }
+body{
+    margin: 0;
+    background-image: url('../images/background.jpg');
+    color: white;
+    text-align: center;
+    font-family: Venom;
+}
 #space{
     height: 8vh;
 }
@@ -14,7 +21,7 @@ nav{
     top: 0;
     left: 0;
     height: 8vh;
-    width:100vw;
+    width: 100vw;
     z-index: 1;
 }
 a:hover{
@@ -23,7 +30,7 @@ a:hover{
 a:visited{
     color: rgb(0, 0, 110) !important;
 }
-.title{
+#title{
     max-height: 100%;
     grid-row: 1/2;
 }
@@ -34,12 +41,18 @@ a:visited{
 .col{
     margin: 0;
 }
-.mainImage{
+#mainImage{
     box-sizing: border-box;
-    max-height: calc(100% - 10px);
+    max-height: calc(100% - 8px);
+    border: white solid 5px;
+    box-sizing: border-box;
 }
 table{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+iframe{
+    border: white solid 5px;
+    box-sizing: border-box;
 }

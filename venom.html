@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/VenomCustom.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
     <style>
         @font-face {
             font-family: Venom;
@@ -17,7 +18,7 @@
         }
     </style>
 </head>
-<body style="margin: 0; background-image: url(images/background.jpg); color: white; text-align: center; font-family: Venom;">
+<body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white" style="position: fixed; top: 0; left: 0;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -44,13 +45,14 @@
     </nav>
     <div id="space"></div>
     <div id="mainView">
-        <img src="images/ModernVenomLogo.png" class="title mt-2 ml-auto mr-auto">
+        <img src="images/pagecorner.png" onclick="change()" id="retroButton" style="border: none; background-color: transparent;">
+        <img src="images/ModernVenomLogo.png" class="mt-2 ml-auto mr-auto" id="title">
         <div class="mainViewContent container-fluid d-flex flex-row justify-content-between mt-4">
             <div class="col">
                 <h3>Around kindergarten, I started to love the character, Venom.<br>I was pretty much obsessed with him, after seeing plenty<br>of television and most likely hints of the spiderman 3 movie,<br>with him in it. I got an action figure, as you can see here, of<br>Mac Gargan Venom.</h3>
             </div>
-            <div class="col d-flex justify-content-center" style="z-index: -1;">
-                <img src="images/Venom.png" class="mainImage border border-light">
+            <div class="col d-flex justify-content-center">
+                <img src="images/Venom.png" id="mainImage">
             </div>
             <div class="col">
                 <h3><u>Features:</u><br>This Venom action figure was a posable action figure and included<br>a posable scorpion tale. That could be removed.<br><br><u>Uses:</u><br>This action figure is primarily meant for things like action figure roleplay,<br>decoration, or, as I used it in my childhood, for posing and using as a<br>reference for drawing.</h3>
@@ -89,12 +91,30 @@
             <td><h5>Manufacturer:</h5></td>
             <td><h5>Hasbro</h5></td>
         </tr>
-    </table>
-    <!--check formatting in notes-->
-    <iframe width="956" height="538" src="https://www.youtube.com/embed/HsZceXd1RHY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="border border-light"></iframe>
+    </table><br>
+    <iframe width="956" height="538" src="https://www.youtube.com/embed/HsZceXd1RHY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <audio autoplay loop>
         <source src="audio/Spider-Man - VENOM Theme _ EPIC REMIX (Venom 2018 x Spider-Man 3).mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
-</body>
+    <script>
+        var retroCustom = document.createElement('LINK');
+        retroCustom.rel = "stylesheet";
+        retroCustom.type = "text/css"
+        retroCustom.href = "css/retroCustom.css";
+        var retroOn = false;
+        function change(){
+            if(retroOn){
+                document.head.removeChild(retroCustom);
+                document.getElementById('title').src = './images/ModernVenomLogo.png';
+                retroOn = false;
+            }
+            else{
+                document.head.append(retroCustom);
+                document.getElementById('title').src = './images/RetroVenomLogo.png';
+                retroOn = true;
+            }
+        }
+    </script>
+ </body>
 </html>

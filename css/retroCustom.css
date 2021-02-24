@@ -1,0 +1,14 @@
+@font-face{
+    src: url('../fonts/VTC_letterer_pro.ttf');
+    font-family: ComicBook;
+}
+body{
+    background-image: url('../images/venomretrobg.png');
+    color: black;
+    font-family: ComicBook;
+}
+nav, h3, img, #mainImage, table, iframe{
+    background-color: white;
+    border: 7px solid black;
+    box-sizing: border-box;
+}
