@@ -10,6 +10,7 @@ img.style.border = 'none';
 var text = document.createElement('H1');
 text.innerHTML = 'Iron Man';
 var retroOn = false;
+reload();
 function retro(){
     if(retroOn){
         document.head.removeChild(retroCustom);
@@ -22,5 +23,14 @@ function retro(){
         title.firstElementChild.remove();
         title.appendChild(img);
         retroOn = true;
+    }
+    sessionStorage.setItem('retroOn', retroOn);
+}
+function reload(){
+    retroOn = JSON.parse(sessionStorage.getItem('retroOn'));
+    if(retroOn){
+        document.head.appendChild(retroCustom);
+        title.firstElementChild.remove();
+        title.appendChild(img);
     }
 }

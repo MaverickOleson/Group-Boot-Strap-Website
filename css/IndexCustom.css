@@ -1,6 +1,6 @@
 @font-face {
     font-family: Marvel;
-    src: url('../fonts/MarvelRegular-Dj83.ttf');
+    src: url('../fonts/American\ Captain.ttf');
 }
 *{
     z-index: 0;
@@ -8,7 +8,7 @@
 body{
     margin: 0;
     background-image: url('../images/indexBG.jpg');
-    background-color: black;
+    background-size: cover;
     color: white;
     text-align: center;
     font-family: Marvel;
@@ -19,7 +19,7 @@ body{
 #mainView{
     display: grid;
     height: 100vh;
-    grid-template-rows: 17vh 75vh ;
+    grid-template-rows: 5vh 87vh ;
 }
 .bg-danger{
     background-color: red !important;
@@ -36,14 +36,10 @@ a{
     color: white im !important;
 }
 a:hover{
-    color: rgb(110, 110, 110) !important;
+    color: rgb(218, 218, 218) !important;
 }
 a:visited{
-    color: rgb(0, 0, 110) !important;
-}
-#title{
-    max-height: 100%;
-    grid-row: 1/2;
+    color: black !important;
 }
 .mainViewContent{
     max-height: 100%;
@@ -59,9 +55,12 @@ a:visited{
 .col{
     margin: 0;
 }
-#mainImage{
+h1, h2{
+    color: red;
+}
+.mainImage{
     box-sizing: border-box;
-    max-height: calc(100% - 8px);
+    max-height: 40vh;
     border: white solid 5px;
     box-sizing: border-box;
 }

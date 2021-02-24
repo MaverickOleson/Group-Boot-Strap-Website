@@ -4,5 +4,6 @@
 }
 body{
     background-image: url('../images/spidermanretrobg.png');
+    background: cover;
     font-family: ComicBook;
 }
