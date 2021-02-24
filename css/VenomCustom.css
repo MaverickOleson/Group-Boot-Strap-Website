@@ -1,3 +1,6 @@
+*{
+    z-index: 0;
+}
 #space{
     height: 8vh;
 }
@@ -12,12 +15,13 @@ nav{
     left: 0;
     height: 8vh;
     width:100vw;
+    z-index: 1;
 }
 a:hover{
     color: rgb(110, 110, 110) !important;
 }
 a:visited{
-    color:red !important;
+    color: rgb(0, 0, 110) !important;
 }
 .title{
     max-height: 100%;
@@ -27,30 +31,15 @@ a:visited{
     max-height: 100%;
     grid-row: 2/3;
 }
+.col{
+    margin: 0;
+}
 .mainImage{
     box-sizing: border-box;
-    max-height: 100%;
+    max-height: calc(100% - 10px);
 }
-#videoBox{
-    display: block;
-    width: 64vw;
-    height: 36vw;
-    position: fixed;
-    top: calc((100vh - 36vw) / 2);
-    right: 16vw;
-    z-index: 1;
-}
-#video{
-    width: inherit;
-    height: inherit;
-}
-#close{
-    width: 1vw;
-    height: 1vw;
-    background-color: white;;
-    content: '\9746';
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    right: 0;
+table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
