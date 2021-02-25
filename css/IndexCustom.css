@@ -57,6 +57,7 @@ a:visited{
 }
 h1, h2{
     color: red;
+    -webkit-text-stroke: 0.3px black;
 }
 .mainImage{
     box-sizing: border-box;
