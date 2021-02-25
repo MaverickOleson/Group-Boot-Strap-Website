@@ -8,7 +8,7 @@ body{
     color: black;
     font-family: ComicBook;
 }
-nav, h3, img, #mainImage, table, iframe{
+nav, h3, h2, img, #mainImage, table, iframe{
     background-color: white;
     border: 7px solid black;
     box-sizing: border-box;
